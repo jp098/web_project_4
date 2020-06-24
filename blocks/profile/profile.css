@@ -1,0 +1,59 @@
+@import url('./__avatar/profile__avatar.css');
+@import url('./__image/profile__image.css');
+@import url('./__info/profile__info.css');
+@import url('./__name/profile__name.css');
+@import url('./__about-me/profile__about-me.css');
+@import url('./__edit-button/profile__edit-button.css');
+@import url('./__edit-icon/profile__edit-icon.css');
+@import url('./__add-button/profile__add-button.css');
+
+.profile {
+    display: flex;
+    width: calc(100% - 199px * 2);
+    max-height: 120px;
+    margin: 0 199px 50px;
+    align-items: center;
+}
+
+@media screen and (max-width: 1140px) {
+    .profile {
+        width: calc(100% - 150px * 2);
+        margin: 0 150px 50px;
+    }
+}
+
+@media screen and (max-width: 1045px) {
+    .profile {
+        width: calc(100% - 100px * 2);
+        margin: 0 100px 50px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .profile {
+        width: calc(100% - 80px * 2);
+        margin: 0 80px 50px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .profile {
+        width: calc(100% - 50px *2);
+        margin: 0 50px 50px;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .profile {
+        width: calc(100% - 19px * 2);
+        margin: 0 19px 36px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .profile {
+        flex-direction: column;
+        align-items: center;
+        max-height: 286px;
+    }
+}

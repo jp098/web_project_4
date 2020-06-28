@@ -1,0 +1,26 @@
+.profile-pictures__container {
+    display: grid;
+    width: fit-content;
+    margin: 0 auto 66px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    row-gap: 21px;
+    column-gap: 18px;
+}
+
+@media screen and (max-width: 960px) {
+    .profile-pictures__container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .profile-pictures__container {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+}

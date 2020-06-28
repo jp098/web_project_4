@@ -7,6 +7,13 @@
     border-bottom: 1px solid #545454;
 }
 
+@media screen and (max-width: 1200px) {
+    .header {
+        width: calc(100% - 159px * 2);
+        margin: 45px 159px 40px;
+    }
+}
+
 @media screen and (max-width: 720px) {
     .header {
         width: 100%;

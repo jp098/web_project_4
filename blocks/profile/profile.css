@@ -10,12 +10,13 @@
 .profile {
     display: flex;
     width: calc(100% - 199px * 2);
+    max-width: 882px;
     max-height: 120px;
     margin: 0 199px 50px;
     align-items: center;
 }
 
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1200px) {
     .profile {
         width: calc(100% - 150px * 2);
         margin: 0 150px 50px;

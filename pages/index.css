@@ -5,3 +5,6 @@
 @import url('../blocks/profile/profile.css');
 @import url('../blocks/profile-pictures/profile-pictures.css');
 @import url('../blocks/footer/footer.css');
+@import url('../blocks/popup/popup.css');
+@import url('../blocks/form/form.css');
+@import url('../blocks/popup/_is-open/popup_is-open.css');

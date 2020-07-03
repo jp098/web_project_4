@@ -81,8 +81,20 @@
             <p class="footer__copyright">&copy; 2020 Around The U.S.</p> 
         </footer>
     </div>
-    <section class="popup">
-
+    <section class="popup popup_is-open">
+        <div class="popup__container">
+            <form action="#" class="form">
+                <h3 class="form__title">Edit Profile</h3>
+                <input type="text" placeholder="Name" value='Jacques Cousteau' class="form__input form__input_type_name">
+                <input type="text" placeholder="About me" value='Explorer' class="form__input form__input_type_about-me">
+                <button class="form__save-button" type='submit'>save</button>
+            </form>
+            <button class="popup__close-button">
+                <img class="popup__close-icon" src="images/Close-Icon.svg" alt="close">
+            </button>
+        </div>
     </section>
+
+    <script src="index.js"></script>
 </body>
 </html>

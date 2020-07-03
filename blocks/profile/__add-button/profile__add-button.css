@@ -5,7 +5,8 @@
     border: 2px solid white;
     padding: 0;
     margin-left: auto;
-    transition: opacity .3s linear .07s;
+    transition: opacity .2s linear .05s;
+    cursor: pointer;
 }
 
 .profile__add-button:hover {

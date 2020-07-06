@@ -1,0 +1,10 @@
+.profile-pictures__like-button {
+    width: 20.76px;
+    height: 18.13px;
+    background-image: url(../../../images/like.svg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-color: #fff;
+    border: none;
+}

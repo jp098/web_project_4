@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Around The U.S.</title>
     <link rel="stylesheet" href="pages/index.css">
 </head>
 <body class="page">
@@ -17,16 +17,12 @@
                 <div class="profile__avatar">
                     <img class="profile__image" src="images/jacques-cousteau.png" alt="Jacques-Cousteau">
                 </div>
-                <ul class="profile__info list">
-                    <li class="profile__name">Jacques Cousteau</li>
-                    <li class="profile__about-me">Explorer</li>
-                    <button class="profile__edit-button">
-                        <img class="profile__edit-icon" src="images/edit-button.svg" alt="Edit">
-                    </button>
-                </ul>
-                <button class="profile__add-button">
-                    <img class="profile__add-icon" src="images/profile-button.svg" alt="Add">
-                </button>
+                <div class="profile__info">
+                    <h1 class="profile__name">Jacques Cousteau</h1>
+                    <p class="profile__about-me">Explorer</p>
+                    <button class="profile__edit-button"></button>
+                </div>
+                <button class="profile__add-button"></button>
             </section>
 
             <section class="profile-pictures">
@@ -35,42 +31,42 @@
                         <img class="profile-pictures__image" src="images/yosemite-valley.png" alt="yosemite-valley">
                         <div class="profile-pictures__group">
                             <h3 class="profile-pictures__text">Yosemite Valley</h3>
-                            <img class="profile-pictures__like" src="images/like.svg" alt="like">
+                            <button class="profile-pictures__like-button"></button>
                         </div>
                     </li>
                     <li class="profile-pictures__item">
                         <img class="profile-pictures__image" src="images/lake-louise.png" alt="lake-louise">
                         <div class="profile-pictures__group">
                             <h3 class="profile-pictures__text">Lake Louise</h3>
-                            <img class="profile-pictures__like" src="images/like.svg" alt="like">
+                            <button class="profile-pictures__like-button"></button>
                         </div>
                     </li>
                     <li class="profile-pictures__item">
                         <img class="profile-pictures__image" src="images/bald-mountains.png" alt="bald-mountains">
                         <div class="profile-pictures__group">
                             <h3 class="profile-pictures__text">Bald Mountains</h3>
-                            <img class="profile-pictures__like" src="images/like.svg" alt="like">
+                            <button class="profile-pictures__like-button"></button>
                         </div>
                     </li>
                     <li class="profile-pictures__item">
                         <img class="profile-pictures__image" src="images/latemar.png" alt="latemar">
                         <div class="profile-pictures__group">
                             <h3 class="profile-pictures__text">Latemar</h3>
-                            <img class="profile-pictures__like" src="images/like.svg" alt="like">
+                            <button class="profile-pictures__like-button"></button>
                         </div>
                     </li>
                     <li class="profile-pictures__item">
                         <img class="profile-pictures__image" src="images/vanois-national.png" alt="vanois-national">
                         <div class="profile-pictures__group">
                             <h3 class="profile-pictures__text">Vanois National...</h3>
-                            <img class="profile-pictures__like" src="images/like.svg" alt="like">
+                            <button class="profile-pictures__like-button"></button>
                         </div>
                     </li>
                     <li class="profile-pictures__item">
                         <img class="profile-pictures__image" src="images/lago-di-braies.png" alt="lago-di-braies">
                         <div class="profile-pictures__group">
                             <h3 class="profile-pictures__text">Lago di Braies</h3>
-                            <img class="profile-pictures__like" src="images/like.svg" alt="like">
+                            <button class="profile-pictures__like-button"></button>
                         </div>
                     </li>
                 </ul>
@@ -89,9 +85,7 @@
                 <input type="text" placeholder="About me" value='Explorer' class="form__input form__input_type_about-me">
                 <button class="form__save-button" type='submit'>save</button>
             </form>
-            <button class="popup__close-button">
-                <img class="popup__close-icon" src="images/Close-Icon.svg" alt="close">
-            </button>
+            <button class="popup__close-button"></button>
         </div>
     </section>
 

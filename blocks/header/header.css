@@ -4,7 +4,7 @@
     width: calc(100% - 159px * 2);
     max-height: 74px;
     margin: 45px 159px 40px;
-    border-bottom: 1px solid #545454;
+    border-bottom: 1px solid rgba(54, 54, 54, .7);
 }
 
 @media screen and (max-width: 1200px) {

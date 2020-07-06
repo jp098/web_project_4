@@ -2,10 +2,14 @@
     width: 40.7px;
     height: 40.7px;
     background-color: #000000;
+    background-image: url(../../../images/Close-Icon.svg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
     border: none;
     position:absolute;
-    top: -30px;
-    right: -30px;
+    top: -35px;
+    right: -35px;
     padding: 0;
     z-index: -1;
     transition: opacity .2s linear .05s;

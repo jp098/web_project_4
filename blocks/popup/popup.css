@@ -1,10 +1,18 @@
 @import url('./__container/popup__container.css');
 @import url('./__close-button/popup__close-button.css');
 @import url('./__close-icon/popup__close-icon.css');
-@import url('./_is-open/popup_is-open.css');
+@import url('./__image-container/popup__image-container.css');
+@import url('./__figure/popup__figure.css');
+@import url('./__image/popup__image.css');
+@import url('./__image-title/popup__image-title.css');
+/*@import url('./_type/popup_type_add-place.css');
+@import url('./_type/popup_type_edit-profile.css');*/
 
 .popup {
     display: flex;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .5s, opacity .5s linear;
     position: fixed;
     top: 0;
     left: 0;
@@ -12,5 +20,6 @@
     height: 100%;
     justify-content: center;
     align-items: center;
+    z-index: 2;
     background-color: rgba(0,0,0,.5);
 }

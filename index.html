@@ -25,50 +25,9 @@
                 <button class="profile__add-button"></button>
             </section>
 
-            <section class="profile-pictures">
-                <ul class="profile-pictures__container list">
-                    <li class="profile-pictures__item">
-                        <img class="profile-pictures__image" src="images/yosemite-valley.png" alt="yosemite-valley">
-                        <div class="profile-pictures__group">
-                            <h2 class="profile-pictures__text">Yosemite Valley</h2>
-                            <button class="profile-pictures__like-button"></button>
-                        </div>
-                    </li>
-                    <li class="profile-pictures__item">
-                        <img class="profile-pictures__image" src="images/lake-louise.png" alt="lake-louise">
-                        <div class="profile-pictures__group">
-                            <h2 class="profile-pictures__text">Lake Louise</h2>
-                            <button class="profile-pictures__like-button"></button>
-                        </div>
-                    </li>
-                    <li class="profile-pictures__item">
-                        <img class="profile-pictures__image" src="images/bald-mountains.png" alt="bald-mountains">
-                        <div class="profile-pictures__group">
-                            <h2 class="profile-pictures__text">Bald Mountains</h2>
-                            <button class="profile-pictures__like-button"></button>
-                        </div>
-                    </li>
-                    <li class="profile-pictures__item">
-                        <img class="profile-pictures__image" src="images/latemar.png" alt="latemar">
-                        <div class="profile-pictures__group">
-                            <h2 class="profile-pictures__text">Latemar</h2>
-                            <button class="profile-pictures__like-button"></button>
-                        </div>
-                    </li>
-                    <li class="profile-pictures__item">
-                        <img class="profile-pictures__image" src="images/vanois-national.png" alt="vanois-national">
-                        <div class="profile-pictures__group">
-                            <h2 class="profile-pictures__text">Vanois National...</h2>
-                            <button class="profile-pictures__like-button"></button>
-                        </div>
-                    </li>
-                    <li class="profile-pictures__item">
-                        <img class="profile-pictures__image" src="images/lago-di-braies.png" alt="lago-di-braies">
-                        <div class="profile-pictures__group">
-                            <h2 class="profile-pictures__text">Lago di Braies</h2>
-                            <button class="profile-pictures__like-button"></button>
-                        </div>
-                    </li>
+            <section class="places">
+                <ul class="places__list list">
+                    
                 </ul>
             </section>
         </main>
@@ -77,17 +36,51 @@
             <p class="footer__copyright">&copy; 2020 Around The U.S.</p> 
         </footer>
     </div>
-    <section class="popup popup_is-open">
+
+    <section class="popup popup_type_edit-profile">
         <div class="popup__container">
             <form action="#" class="form">
                 <h3 class="form__title">Edit Profile</h3>
                 <input type="text" placeholder="Name" value='Jacques Cousteau' class="form__input form__input_type_name">
                 <input type="text" placeholder="About me" value='Explorer' class="form__input form__input_type_about-me">
-                <button class="form__save-button" type='submit'>save</button>
+                <button class="form__save-button" type='submit'>Save</button>
             </form>
             <button class="popup__close-button"></button>
         </div>
     </section>
+
+    <section class="popup popup_type_add-place">
+        <div class="popup__container">
+            <form action="#" class="form">
+                <h3 class="form__title">New Place</h3>
+                <input type="text" placeholder="Title" value="" class="form__input form__input_type_title">
+                <input type="text" placeholder="Image Link" value="" class="form__input form__input_type_image-link">
+                <button class="form__create-button" type='submit'>Create</button>
+            </form>
+            <button class="popup__close-button"></button>
+        </div>
+    </section>
+
+    <section class="popup popup_type_image">
+        <div class="popup__image-container">
+            <button class="popup__close-button"></button>
+            <figure class="popup__figure">
+                <img class="popup__image" src="" alt="">
+                <figcaption class="popup__image-title"></figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <template class="places-template">
+        <li class="places__item place">
+            <button type="button" class="places__delete-button"></button>
+            <div class="places__image"></div>
+            <div class="places__description">
+                <h2 class="places__title"></h2>
+                <button type="button" class="places__like-button"></button>
+            </div>
+        </li>
+    </template>
 
     <script src="index.js"></script>
 </body>

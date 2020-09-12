@@ -1,3 +1,5 @@
 .popup_is-open {
-    display: none;
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 0s, opacity .5s linear;
 }

@@ -1,0 +1,15 @@
+.places__image {
+    width: 282px;
+    height: 282px;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
+    border: none;
+    transition: opacity .2s linear .05s;
+    cursor: pointer;
+}
+
+.places__image:hover {
+    opacity: .8;
+}

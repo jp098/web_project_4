@@ -1,0 +1,7 @@
+@import url('./__list/places__list.css');
+@import url('./__item/places__item.css');
+@import url('./__image/places__image.css');
+@import url('./__description/places__description.css');
+@import url('./__like-button/places__like-button.css');
+@import url('./__title/places__title.css');
+@import url('./__delete-button/places__delete-button.css');

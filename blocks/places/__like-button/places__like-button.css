@@ -1,5 +1,7 @@
-.profile-pictures__like-button {
-    width: 20.76px;
+/*@import url('./_active/places__like-button_active.css');*/
+
+.places__like-button {
+    width: 22px;
     height: 18.13px;
     background-image: url(../../../images/like.svg);
     background-repeat: no-repeat;
@@ -7,4 +9,10 @@
     background-position: center;
     background-color: #fff;
     border: none;
+    transition: opacity .2s linear .05s;
+    cursor: pointer;
+}
+
+.places__like-button:hover {
+    opacity: .6;
 }

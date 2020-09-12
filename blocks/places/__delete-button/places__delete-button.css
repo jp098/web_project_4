@@ -1,21 +1,21 @@
-.popup__close-button {
-    width: 40.7px;
-    height: 40.7px;
-    background-color: rgba(0,0,0,0);
-    background-image: url(../../../images/Close-Icon.svg);
+.places__delete-button {
+    width: 18px;
+    height: 19.3px;
+    background-image: url(../../../images/delete-icon.svg);
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center;
+    background-color: rgba(0,0,0,.0);
     border: none;
     position: absolute;
-    top: -35px;
-    right: -35px;
+    top: 18px;
+    right: 15px;
+    z-index: 1;
     padding: 0;
-    z-index: -1;
     transition: opacity .2s linear .05s;
     cursor: pointer;
 }
 
-.popup__close-button:hover {
+.places__delete-button:hover {
     opacity: .6;
 }

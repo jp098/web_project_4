@@ -1,12 +1,9 @@
 @import url('./__container/popup__container.css');
 @import url('./__close-button/popup__close-button.css');
-@import url('./__close-icon/popup__close-icon.css');
 @import url('./__image-container/popup__image-container.css');
 @import url('./__figure/popup__figure.css');
 @import url('./__image/popup__image.css');
 @import url('./__image-title/popup__image-title.css');
-/*@import url('./_type/popup_type_add-place.css');
-@import url('./_type/popup_type_edit-profile.css');*/
 
 .popup {
     display: flex;

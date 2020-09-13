@@ -132,6 +132,7 @@ const initialPlaces = [
             const popupImageTitle = imagePopup.querySelector('.popup__image-title');
 
             popupImage.src = data.link;
+            popupImage.alt = data.name;
             popupImageTitle.textContent = data.name;
 
             togglePopup(imagePopup);

@@ -6,6 +6,5 @@
 @import url('../blocks/places/places.css');
 @import url('../blocks/footer/footer.css');
 @import url('../blocks/popup/popup.css');
-@import url('../blocks/form/form.css');
 @import url('../blocks/popup/_is-open/popup_is-open.css');
 @import url('../blocks/places/__like-button/_active/places__like-button_active.css');

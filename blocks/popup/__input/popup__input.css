@@ -1,9 +1,9 @@
-.form__input {
-    width: calc(100% - 36px * 2);
+.popup__input {
+    width: 100%;
     font-size: 14px;
     line-height: 17px;
     font-weight: normal;
-    margin: 0 36px 29px;
+    padding: 0;
     border-style: none;
     border-bottom: 1px solid rgba(0,0,0,.2);
 }

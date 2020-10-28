@@ -39,11 +39,17 @@
 
     <section class="popup popup_type_edit-profile">
         <div class="popup__container">
-            <form action="#" class="form">
-                <h3 class="form__title">Edit Profile</h3>
-                <input type="text" placeholder="Name" value='Jacques Cousteau' class="form__input form__input_type_name">
-                <input type="text" placeholder="About me" value='Explorer' class="form__input form__input_type_about-me">
-                <button class="form__save-button" type='submit'>Save</button>
+            <form action="#" class="popup__form">
+                <h3 class="popup__title">Edit Profile</h3>
+                <label class="popup__field">
+                    <input id="profile-name" type="text" placeholder="Name" value='Jacques Cousteau' class="popup__input popup__input_type_name" required maxlength="40" minlength="2">
+                    <span id="profile-name-error" class="popup__error"></span>
+                </label>
+                <label class="popup__field">
+                    <input id="profile-text" type="text" placeholder="About-me" value='Explorer' class="popup__input popup__input_type_about-me" required maxlength="200" minlength="2">
+                    <span id="profile-text-error" class="popup__error"></span>
+                </label>
+                <button class="popup__button" type='submit'>Save</button>
             </form>
             <button class="popup__close-button"></button>
         </div>
@@ -51,11 +57,17 @@
 
     <section class="popup popup_type_add-place">
         <div class="popup__container">
-            <form action="#" class="form">
-                <h3 class="form__title">New Place</h3>
-                <input type="text" placeholder="Title" value="" class="form__input form__input_type_title">
-                <input type="text" placeholder="Image Link" value="" class="form__input form__input_type_image-link">
-                <button class="form__create-button" type='submit'>Create</button>
+            <form action="#" class="popup__form">
+                <h3 class="popup__title">New Place</h3>
+                <label class="popup__field">
+                    <input id="place-title" type="text" placeholder="Title" value="" class="popup__input popup__input_type_title" required maxlength="30" minlength="1">
+                    <span id="place-title-error" class="popup__error"></span>
+                </label>
+                <label class="popup__field">
+                    <input id="place-url" type="url" placeholder="Image Link" value="" class="popup__input popup__input_type_image-link" required>
+                    <span id="place-url-error" class="popup__error"></span>
+                </label>
+                <button class="popup__button" type='submit'>Create</button>
             </form>
             <button class="popup__close-button"></button>
         </div>
@@ -83,5 +95,6 @@
     </template>
 
     <script src="./scripts/index.js"></script>
+    <script src="./scripts/validation.js"></script>
 </body>
 </html>

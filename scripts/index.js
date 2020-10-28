@@ -4,8 +4,8 @@ const addPlacePopup = document.querySelector('.popup_type_add-place');
 const imagePopup = document.querySelector('.popup_type_image');
 const popupImage = imagePopup.querySelector('.popup__image');
 
-const editProfileForm = editProfilePopup.querySelector('.form');
-const addPlaceForm = addPlacePopup.querySelector('.form');
+const editProfileForm = editProfilePopup.querySelector('.popup__form');
+const addPlaceForm = addPlacePopup.querySelector('.popup__form');
 
 // Buttons 
 const editButton = document.querySelector('.profile__edit-button');
@@ -18,11 +18,11 @@ const closeImageButton = imagePopup.querySelector('.popup__close-button');
 const profileName = document.querySelector('.profile__name');
 const profileAboutme = document.querySelector('.profile__about-me');
 
-const inputName = document.querySelector('.form__input_type_name');
-const inputAboutme = document.querySelector('.form__input_type_about-me');
+const inputName = document.querySelector('.popup__input_type_name');
+const inputAboutme = document.querySelector('.popup__input_type_about-me');
 
-const placeTitleInput = addPlaceForm.querySelector('.form__input_type_title');
-const placeLinkInput = addPlaceForm.querySelector('.form__input_type_image-link');
+const placeTitleInput = addPlaceForm.querySelector('.popup__input_type_title');
+const placeLinkInput = addPlaceForm.querySelector('.popup__input_type_image-link');
 
 const popupImageTitle = imagePopup.querySelector('.popup__image-title');
 
@@ -59,7 +59,6 @@ const initialPlaces = [
 //Functions
 function togglePopup(popup) {
   popup.classList.toggle('popup_is-open');
-
 }
 
 function addEventListener(evt) {

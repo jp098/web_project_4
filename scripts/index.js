@@ -57,8 +57,27 @@ const initialPlaces = [
 ];
 
 //Functions
+
+function escHandler(evt) {
+  const openPopup = document.querySelector('.popup_is-open');
+    if(evt.key === "Escape") {
+    togglePopup(openPopup);
+  }
+}
+
+function outsideClick(evt) {
+  togglePopup(evt.target);
+}
+
 function togglePopup(popup) {
   popup.classList.toggle('popup_is-open');
+    if(popup.classList.contains('popup_is-open')) {
+      popup.addEventListener('click', outsideClick);
+      document.addEventListener('keydown', escHandler);
+    } else {
+      popup.removeEventListener('click', outsideClick);
+      document.removeEventListener('keydown', escHandler);
+    };
 }
 
 function addEventListener(evt) {
@@ -139,6 +158,7 @@ addPlaceForm.addEventListener('submit', (evt) => {
 
   togglePopup(addPlacePopup);
 });
+
 
 
 //Page content 
